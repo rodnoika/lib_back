@@ -11,7 +11,12 @@ import ChangeClub from './ChangeClub';
 import AcceptClubInvitation from './AcceptClubInvitation.';
 import DeclineClubInvitation from './DeclineClubInvitation';
 import DeleteClubInvitation from './DeleteClubInvitation';
-
+import AddBookToLibrary from './AddBookToLibrary';
+import RemoveFromLibrary from './RemoveFromLibrary';
+import GetUserLibrary from './GetUserLibrary';
+import CheckBookInLibrary from './CheckBookInLibrary';
+import AddNewBook from './AddNewBook';
+import Katalog from './Katalog';
 const Nav: React.FC = () => {
   return (
     <Router>
@@ -26,6 +31,11 @@ const Nav: React.FC = () => {
         <Route path="/accept-invitation" element={<AcceptClubInvitation />} />
         <Route path="/decline-invitation" element={<DeclineClubInvitation />} />
         <Route path="/delete-invitation" element={<DeleteClubInvitation />} />
+        <Route path="/add-book-to-library" element={<AddBookToLibrary />} />
+        <Route path="/remove-from-library" element={<RemoveFromLibrary />} />
+        <Route path="/check-book-in-library" element={<CheckBookInLibrary />} />
+        <Route path="/add-new-book" element={<AddNewBook />} />
+        <Route path="/katalog" element={<Katalog/>}/>
 
       </Routes>
     </Router>

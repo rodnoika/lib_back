@@ -17,7 +17,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   const [token, setToken] = useState<string | null>(Cookies.get('token') || null);
 
   const saveToken = (newToken: string) => {
-    Cookies.set('token', newToken, { expires: 7 }); // Токен будет действителен в течение 7 дней
+    Cookies.set('token', newToken, { expires: 7 });
     setToken(newToken);
   };
 

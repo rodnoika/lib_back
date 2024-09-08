@@ -5,7 +5,7 @@ import Login from './Login';
 import UserProfile from './UserProfile';
 import ClubList from './ClubList';
 import FriendsList from './FriendsList';
-
+import GetUserLibrary from './GetUserLibrary';
 const App: React.FC = () => {
   return (
     <AuthProvider>
@@ -16,6 +16,7 @@ const App: React.FC = () => {
         <UserProfile />
         <ClubList/>
         <FriendsList/>
+        <GetUserLibrary/>
       </div>
     </AuthProvider>
   );

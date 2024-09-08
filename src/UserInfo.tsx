@@ -32,7 +32,7 @@ const UserInfo: React.FC = () => {
             'Authorization': `Bearer ${token}`,
             'Content-Type': 'application/json',
           },
-          signal: abortController.signal, // Link the request to the abort controller
+          signal: abortController.signal, 
         });
 
         if (!response.ok) {
